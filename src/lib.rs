@@ -94,12 +94,12 @@ impl App for Installer {
 impl Installer {
     fn install(&mut self) -> Result<(), Box<dyn std::error::Error>> {
         let app_path = self.target_path.clone() + r"\" + &self.app_name + ".exe";
-        if let Ok(_) = std::fs::read(&app_path) {
+        if std::fs::read(&app_path).is_ok() {
             return Err("App already installed".into());
         };
         std::fs::create_dir_all(&self.target_path)?;
         self.installer_output += format!("\nCreating App folder: \n{}", &self.target_path).as_str();
-        std::fs::write(&app_path, &self.executable)?;
+        std::fs::write(&app_path, self.executable)?;
         self.installer_output += "\nCopying executable to folder";
         Ok(())
     }

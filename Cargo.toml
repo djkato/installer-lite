@@ -3,7 +3,13 @@ name = "installer_lite"
 version = "1.0.0"
 edition = "2021"
 authors = ["Djkáťo <djkatovfx@gmail.com>"]
-
+license = "MIT OR Apache-2.0"
+description = "A simple Windows Installer creator for your apps."
+homepage = "https://github.com/djkato/installer-lite"
+repository = "https://github.com/djkato/installer-lite"
+readme = "README.md"
+keywords = ["installer", "windows", "wrapper"]
+categories = ["development-tools::build-utils", "gui", "development-tools"]
 [lib]
 name = "installer_lite"
 path = "src/lib.rs"
