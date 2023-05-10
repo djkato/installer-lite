@@ -1,6 +1,8 @@
 # Installer lite
 A simple installation app creator for your Windows app.
 Takes the bytes that make up your binary and store it inside the installer binary, then it writes the file down in a requested location.
+![demo_app_installer_DPcp9pItUP](https://github.com/djkato/installer-lite/assets/25299243/ade2c6aa-8916-49c1-aa80-daa1aff66f30)
+
 how to use:
 - First create a `./installer/installer.rs` file in your crates root directory.
 - Add the binary to your `Cargo.toml` as such:
