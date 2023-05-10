@@ -1,0 +1,13 @@
+[package]
+name = "installer_lite"
+version = "1.0.0"
+edition = "2021"
+authors = ["Djkáťo <djkatovfx@gmail.com>"]
+
+[lib]
+name = "installer_lite"
+path = "src/lib.rs"
+
+[dependencies]
+eframe = "0.21.3"
+rfd = "0.11.3"
