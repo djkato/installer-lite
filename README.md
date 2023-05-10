@@ -1,4 +1,4 @@
-#Installer lite
+# Installer lite
 A simple installation app creator for your Windows app.
 Takes the bytes that make up your binary and store it inside the installer binary, then it writes the file down in a requested location.
 how to use:
@@ -25,7 +25,7 @@ path = "installer/installer.rs"
 installer_lite = "1.0.0"
 ```
 - inside the `installer.rs`:
-```rs
+```rust
 use installer_lite::Installer;
 use std::{env, path::PathBuf};
 
