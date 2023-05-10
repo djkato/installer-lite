@@ -10,6 +10,7 @@ repository = "https://github.com/djkato/installer-lite"
 readme = "README.md"
 keywords = ["installer", "windows", "wrapper"]
 categories = ["development-tools::build-utils", "gui", "development-tools"]
+exclude = ["demo-app"]
 [lib]
 name = "installer_lite"
 path = "src/lib.rs"
