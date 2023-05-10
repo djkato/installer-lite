@@ -1,6 +1,6 @@
 [package]
 name = "installer_lite"
-version = "1.0.1"
+version = "1.0.2"
 edition = "2021"
 authors = ["Djkáťo <djkatovfx@gmail.com>"]
 license = "MIT OR Apache-2.0"
